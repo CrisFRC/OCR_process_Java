@@ -1,0 +1,6 @@
+# ignorar los archivos de log
+*.log
+
+#ignorar los archivos de imagen
+*.png
+*.jpg
