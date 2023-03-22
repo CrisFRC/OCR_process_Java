@@ -14,9 +14,9 @@ public class OCR_capture {
         ITesseract instance = new Tesseract();
         try{
             instance.setLanguage("spa");
-            String imageText = instance.doOCR(new File(path));
+            String imageText = instance.doOCR(new File("images/output.jpg"));
             System.out.println(imageText);
-            return imageText;
+            return null;
         }catch(Exception e)
         {
             e.printStackTrace();
