@@ -8,11 +8,9 @@ import java.io.File;
 public class OCR_capture {
 
 
-    public static void applySegmentation(String path){
-
-    }
 
     public static String getTextFromImage(String path){
+        Segmentation.thresholdSegmentation(path);
         ITesseract instance = new Tesseract();
         try{
             instance.setLanguage("spa");
